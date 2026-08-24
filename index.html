@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad — KM26</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0 auto; padding: 48px 20px 80px; max-width: 720px;
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: #101214; color: #e8eaec;
+  }
+  @media (prefers-color-scheme: light) { body { background: #fff; color: #1a1c1e; } }
+  h1 { font-size: 1.7rem; line-height: 1.25; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 2.2em 0 .5em; }
+  h3 { font-size: 1rem; margin: 1.6em 0 .3em; }
+  p, li { margin: .55em 0; }
+  .date { opacity: .65; font-size: .9rem; margin-bottom: 2em; }
+  a { color: #29c5f6; }
+  strong { font-weight: 650; }
+</style>
+</head>
+<body>
+
+<h1>Política de privacidad de KM26</h1>
+<p class="date">Última actualización: 24 de agosto de 2026</p>
+
+<p>KM26 es una aplicación para aficionados al motor: un mapa en vivo, un garaje,
+publicaciones con fotos («Revs»), quedadas, rutas y chat. Esta política explica qué datos
+maneja la aplicación, para qué, y qué control tienes sobre ellos. Está escrita para
+leerse, no para cubrir el expediente.</p>
+
+<h2>1. Responsable</h2>
+<ul>
+  <li><strong>Responsable del tratamiento:</strong> Adrián Navarro Pérez</li>
+  <li><strong>Contacto:</strong> <a href="mailto:adrian.nape26@gmail.com">adrian.nape26@gmail.com</a></li>
+</ul>
+
+<h2>2. Qué datos tratamos y para qué</h2>
+
+<h3>Cuenta y perfil</h3>
+<p>Correo electrónico y contraseña (gestionados por nuestro proveedor de autenticación;
+nunca vemos tu contraseña en claro), nombre de usuario, nombre visible, biografía, foto
+de perfil, país y preferencias de la app (color, unidades, idioma). Son necesarios para
+que la cuenta exista y para que otros usuarios puedan encontrarte e identificarte.</p>
+
+<h3>Contenido que publicas</h3>
+<p>Fotos y textos de tus Revs, tus vehículos y sus fichas, tus rutas, comentarios,
+«me gusta», quedadas y crews. Tú eliges la visibilidad de cada publicación (pública /
+amigos / privada) y si tu cuenta es privada, y el servidor aplica esas reglas en cada
+consulta.</p>
+
+<h3>Ubicación</h3>
+<p>La ubicación es el corazón de la app y se usa para: mostrar tu posición en el mapa a
+quien tú elijas (desactivado / amigos / crews concretas / todos — <strong>desactivable en
+cualquier momento</strong> en Ajustes), registrar kilómetros conducidos y zonas exploradas
+para el sistema de progresión, crear alertas de mapa y navegar rutas. La posición en vivo
+solo se comparte mientras la app está en uso y solo con el nivel que hayas elegido.</p>
+
+<h3>Chat: cifrado de extremo a extremo</h3>
+<p>Los mensajes directos, sus fotos y notas de voz están cifrados de extremo a extremo
+(X25519/NaCl). <strong>El servidor almacena solo texto cifrado y no tiene la clave</strong>:
+no podemos leer tus conversaciones, ni entregarlas, ni mostrarlas en notificaciones — por
+eso una notificación de mensaje nunca incluye el contenido. Las claves privadas viven
+únicamente en tu dispositivo, en su almacén seguro.</p>
+
+<h3>Música</h3>
+<p>Si añades música a un Rev o a tu perfil, usamos el buscador y las previsualizaciones
+de <strong>Deezer</strong>. La búsqueda que escribes se envía a Deezer para obtener
+resultados; no compartimos con Deezer quién eres.</p>
+
+<h3>Panel multimedia (solo Android, opcional)</h3>
+<p>La función «isla de música» puede mostrar dentro de KM26 lo que está sonando en tu
+móvil. Requiere el permiso de acceso a notificaciones de Android, está
+<strong>desactivada por defecto</strong>, y lo que lee (título y carátula de la
+reproducción) <strong>se muestra en tu pantalla y no se envía a nuestros
+servidores</strong>.</p>
+
+<h3>Comandos de voz</h3>
+<p>Los comandos de voz en modo conducción usan el servicio de reconocimiento de voz de tu
+dispositivo. No almacenamos las grabaciones.</p>
+
+<h3>Notificaciones push</h3>
+<p>Guardamos el token de notificaciones de tu dispositivo para avisarte de mensajes
+nuevos. Como se explica arriba, el aviso nunca contiene el texto del mensaje.</p>
+
+<h3>Economía del juego</h3>
+<p>Tu saldo de monedas, compras de cosméticos y recompensas se calculan y guardan en el
+servidor, asociados a tu cuenta.</p>
+
+<h2>3. Publicidad</h2>
+<p>KM26 muestra anuncios de <strong>Google AdMob</strong>: vídeos bonificados que eliges
+ver a cambio de monedas, y anuncios nativos en el feed. Antes de mostrar el primer
+anuncio se te pide consentimiento mediante la plataforma de mensajes de Google (CMP
+certificada); puedes cambiar tu elección en cualquier momento en <strong>Ajustes →
+Privacidad → Opciones de privacidad de anuncios</strong>. Si rechazas la publicidad
+personalizada, los anuncios que se muestren no usarán tus datos para personalizarse.</p>
+<p>Cuando completas un vídeo bonificado, Google notifica a nuestro servidor un
+identificador de la transacción y tu identificador de usuario en KM26 para acreditar la
+recompensa. El tratamiento que hace Google de los datos publicitarios se describe en su
+propia política:
+<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
+
+<h2>4. Dónde se guardan los datos</h2>
+<p>En <strong>Supabase</strong>, sobre infraestructura de Amazon Web Services en
+<strong>Europa (eu-west-2, Londres)</strong>. Todas las comunicaciones van cifradas
+(HTTPS), y todas las tablas aplican reglas de acceso por fila en el propio servidor: la
+visibilidad que eliges se impone en la base de datos, no solo en la interfaz.</p>
+
+<h2>5. Lo que NO hacemos</h2>
+<ul>
+  <li><strong>No vendemos tus datos</strong> ni los cedemos a terceros para sus fines.</li>
+  <li><strong>No usamos SDKs de analítica ni de seguimiento</strong> de terceros. Los
+  únicos servicios externos son los citados: autenticación y base de datos (Supabase),
+  anuncios (Google AdMob), búsqueda de música (Deezer) y notificaciones push.</li>
+  <li><strong>No podemos leer tus mensajes</strong>, por construcción.</li>
+  <li>No accedemos a tus contactos, ni a tu galería más allá de las fotos que eliges
+  subir.</li>
+</ul>
+
+<h2>6. Cuánto tiempo conservamos los datos</h2>
+<p>Mientras tu cuenta exista. Puedes <strong>eliminar tu cuenta desde dentro de la
+app</strong> (Ajustes → Cuenta → Eliminar cuenta): el borrado es inmediato y en cascada —
+perfil, vehículos, publicaciones, comentarios, «me gusta», seguidores, mensajes, monedas,
+cosméticos, estadísticas y archivos subidos. Dos excepciones razonadas: una crew con más
+miembros se transfiere al miembro más antiguo en lugar de destruirse (es también el hogar
+de otras personas), y las quedadas que creaste se eliminan (una quedada sin anfitrión es
+peor que ninguna).</p>
+
+<h2>7. Tus derechos</h2>
+<p>Bajo el RGPD y la LOPDGDD tienes derecho de acceso, rectificación, supresión,
+portabilidad, limitación y oposición. Puedes ejercerlos escribiendo al contacto de la
+sección 1. También tienes derecho a reclamar ante la Agencia Española de Protección de
+Datos (<a href="https://www.aepd.es">aepd.es</a>).</p>
+
+<h2>8. Menores</h2>
+<p>KM26 no está dirigida a menores de 16 años. Si detectamos una cuenta de un menor de
+esa edad, la eliminaremos.</p>
+
+<h2>9. Cambios en esta política</h2>
+<p>Si cambiamos esta política de forma sustancial, lo anunciaremos dentro de la app antes
+de que el cambio entre en vigor. La fecha de la última actualización figura al
+principio.</p>
+
+</body>
+</html>
