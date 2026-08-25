@@ -24,7 +24,7 @@
 <body>
 
 <h1>Política de privacidad de KM26</h1>
-<p class="date">Última actualización: 24 de agosto de 2026</p>
+<p class="date">Última actualización: 26 de agosto de 2026</p>
 
 <p>KM26 es una aplicación para aficionados al motor: un mapa en vivo, un garaje,
 publicaciones con fotos («Revs»), quedadas, rutas y chat. Esta política explica qué datos
@@ -81,6 +81,33 @@ servidores</strong>.</p>
 <p>Los comandos de voz en modo conducción usan el servicio de reconocimiento de voz de tu
 dispositivo. No almacenamos las grabaciones.</p>
 
+<h3>Mapa, rutas y búsqueda de lugares</h3>
+<p>Para dibujar el mapa, calcular rutas y buscar sitios, la app consulta servicios abiertos
+del ecosistema OpenStreetMap. <strong>A estos servicios les llega la información mínima que
+necesitan para responder, y nunca quién eres</strong>: no reciben tu cuenta, tu correo ni tu
+nombre de usuario, solo la consulta técnica y —como en cualquier petición de internet— la
+dirección IP de tu conexión.</p>
+<ul>
+  <li><strong>OpenFreeMap</strong> — las teselas del mapa. Recibe la zona que estás
+  mirando.</li>
+  <li><strong>OSRM</strong> y <strong>Valhalla</strong> (FOSSGIS) — el cálculo de la ruta.
+  Reciben el origen, el destino y las paradas.</li>
+  <li><strong>Photon</strong> (komoot) y <strong>Nominatim</strong> (OpenStreetMap
+  Foundation) — la búsqueda de direcciones. Reciben el texto que escribes y una referencia
+  de zona.</li>
+  <li><strong>Overpass</strong> (FOSSGIS, kumi.systems, OSM Francia) — curvas, gasolineras
+  y puntos de interés cercanos. Recibe un recuadro alrededor de tu posición.</li>
+</ul>
+<p>Todos ellos están alojados en la Unión Europea o en el Reino Unido. Estos servicios son
+<strong>intercambiables</strong>: la app puede cambiar de proveedor sin actualizarse, y si
+eso ocurre esta lista se actualiza.</p>
+
+<h3>Avisos de tráfico</h3>
+<p>La app descarga boletines públicos de incidencias de la <strong>DGT</strong> (España),
+<strong>Bison Futé</strong> (Francia) y <strong>Digitraffic / Fintraffic</strong>
+(Finlandia). Son descargas de ficheros abiertos, iguales para todo el mundo: <strong>no se
+les envía tu posición ni ningún dato tuyo</strong>.</p>
+
 <h3>Notificaciones push</h3>
 <p>Guardamos el token de notificaciones de tu dispositivo para avisarte de mensajes
 nuevos. Como se explica arriba, el aviso nunca contiene el texto del mensaje.</p>
@@ -111,12 +138,20 @@ visibilidad que eliges se impone en la base de datos, no solo en la interfaz.</p
 <h2>5. Lo que NO hacemos</h2>
 <ul>
   <li><strong>No vendemos tus datos</strong> ni los cedemos a terceros para sus fines.</li>
-  <li><strong>No usamos SDKs de analítica ni de seguimiento</strong> de terceros. Los
-  únicos servicios externos son los citados: autenticación y base de datos (Supabase),
-  anuncios (Google AdMob), búsqueda de música (Deezer) y notificaciones push.</li>
+  <li><strong>No usamos SDKs de analítica ni de seguimiento</strong> de terceros. No hay
+  Firebase Analytics, ni Sentry, ni atribución de instalaciones, ni ninguna herramienta que
+  perfile tu uso de la app. Los únicos servicios externos son los enumerados en esta
+  política: autenticación y base de datos (Supabase), anuncios (Google AdMob), búsqueda de
+  música (Deezer), notificaciones push, y los servicios de mapa, rutas, búsqueda y tráfico
+  de la sección 2.</li>
   <li><strong>No podemos leer tus mensajes</strong>, por construcción.</li>
   <li>No accedemos a tus contactos, ni a tu galería más allá de las fotos que eliges
   subir.</li>
+  <li><strong>No usamos inteligencia artificial.</strong> KM26 no tiene asistentes, ni
+  generación de texto o imágenes, ni modelos que analicen tu contenido, y <strong>tus datos
+  no se usan para entrenar ningún modelo</strong>. Los comandos de voz usan el
+  reconocimiento del propio sistema operativo de tu móvil y se comparan contra una lista
+  fija de órdenes.</li>
 </ul>
 
 <h2>6. Cuánto tiempo conservamos los datos</h2>
@@ -127,6 +162,11 @@ cosméticos, estadísticas y archivos subidos. Dos excepciones razonadas: una cr
 miembros se transfiere al miembro más antiguo en lugar de destruirse (es también el hogar
 de otras personas), y las quedadas que creaste se eliminan (una quedada sin anfitrión es
 peor que ninguna).</p>
+
+<p>Una precisión honesta sobre las fotos: se borran del servidor en el momento, pero las
+redes de distribución de contenido que las sirven pueden conservar una copia en caché
+<strong>hasta una hora</strong>, y los dispositivos que ya las hubieran descargado mantienen
+su propia caché local. Pasado ese plazo dejan de estar disponibles en cualquier caso.</p>
 
 <h2>7. Tus derechos</h2>
 <p>Bajo el RGPD y la LOPDGDD tienes derecho de acceso, rectificación, supresión,
