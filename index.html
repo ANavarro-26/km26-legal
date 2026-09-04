@@ -24,7 +24,7 @@
 <body>
 
 <h1>Política de privacidad de KM26</h1>
-<p class="date">Última actualización: 1 de septiembre de 2026</p>
+<p class="date">Última actualización: 4 de septiembre de 2026</p>
 
 <p>KM26 es una aplicación para aficionados al motor: un mapa en vivo, un garaje,
 publicaciones con fotos («Revs»), quedadas, rutas y chat. Esta política explica qué datos
@@ -145,14 +145,32 @@ visibilidad que eliges se impone en la base de datos, no solo en la interfaz.</p
 <h2>5. Lo que NO hacemos</h2>
 <ul>
   <li><strong>No vendemos tus datos</strong> ni los cedemos a terceros para sus fines.</li>
-  <li><strong>No usamos SDKs de analítica ni de seguimiento</strong> de terceros. No hay
-  Firebase Analytics, ni Sentry, ni atribución de instalaciones, ni ninguna herramienta de
-  terceros que perfile tu uso de la app. Lo único que medimos es nuestro, se queda en nuestro
-  servidor y está dicho arriba: <strong>el día en que abres la app y cuántas veces</strong>
-  (sección 2, «Uso de la app»). Los únicos servicios externos son los enumerados en esta
-  política: autenticación y base de datos (Supabase), anuncios (Google AdMob), búsqueda de
-  música (Deezer), notificaciones push, y los servicios de mapa, rutas, búsqueda y tráfico
-  de la sección 2.</li>
+  <li><strong>No hay analítica de producto ni atribución de instalaciones.</strong> No
+  usamos Firebase Analytics, ni Amplitude, ni Mixpanel, ni ninguna herramienta que perfile
+  tu uso de la app ni construya un perfil publicitario a partir de él. Lo único que medimos
+  sobre tu uso es nuestro, se queda en nuestro servidor y está dicho arriba: <strong>el día
+  en que abres la app y cuántas veces</strong> (sección 2, «Uso de la app»).</li>
+  <li><strong>Sí usamos una herramienta de terceros para los fallos: Sentry.</strong> Cuando
+  la app se rompe, nos manda el informe técnico del error para que podamos arreglarlo.
+  Merece que digamos exactamente qué viaja y qué no:
+  <ul>
+    <li><strong>Va:</strong> el mensaje del error, la traza del código, la versión de la app
+    y de la actualización que tenías puesta, el modelo de móvil y su versión de Android.</li>
+    <li><strong>No va:</strong> quién eres. No enviamos tu identificador de cuenta, ni tu
+    correo, ni tu posición, ni tu dirección IP, ni el contenido de la pantalla. No grabamos
+    la sesión ni medimos qué pantallas visitas — eso sería analítica, y está desactivado a
+    propósito.</li>
+    <li><strong>Sí va un identificador aleatorio de la instalación</strong>, que no está
+    ligado a tu cuenta y cambia si reinstalas la app. Sirve para una sola cosa: saber si un
+    fallo le ocurrió veinte veces a una persona o una vez a veinte, que es lo que decide si
+    hay que correr. No permite saber quién eres ni relacionarte con tu perfil de KM26.</li>
+  </ul>
+  Los informes se guardan en la región europea de Sentry y se borran solos a los 30 días. Su
+  política: <a href="https://sentry.io/privacy/">sentry.io/privacy</a>.</li>
+  <li>Aparte de eso, los únicos servicios externos son los enumerados en esta política:
+  autenticación y base de datos (Supabase), anuncios (Google AdMob), búsqueda de música
+  (Deezer), notificaciones push, y los servicios de mapa, rutas, búsqueda y tráfico de la
+  sección 2.</li>
   <li><strong>No podemos leer tus mensajes</strong>, por construcción.</li>
   <li>No accedemos a tus contactos, ni a tu galería más allá de las fotos que eliges
   subir.</li>
